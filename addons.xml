@@ -16,7 +16,7 @@
     <requires>
         <import addon="script.module.requests" version="2.3.0"/>
         <import addon="script.module.beautifulsoup4" version="0.6.0"/>
-        <import addon="script.furkit.artwork" optional="true" />
+        <import addon="script.furkit.artwork"/>
         <import addon="script.module.resolveurl" optional="true"/>
         <import addon="script.module.universalscrapers" version="1.0.0" optional="true" />
     </requires>
