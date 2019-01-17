@@ -52,4 +52,24 @@
 		<platform>all</platform>
 	</extension>
 </addon>
+<addon id="context.furkit.playback.settings" name="Furk It Playback Settings" version="1.0.0" provider-name="Tikipeter">
+  <requires>
+    <import addon="xbmc.python" version="2.25.0"/>
+  </requires>
+  <extension point="kodi.context.item" library="playback_context_menu.py">
+    <provides>executable</provides>	
+      <item>
+        <label>Furk It Playback Options...</label>
+        <visible>[String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,episode)] + String.IsEqual(ListItem.FileExtension,strm)</visible>
+      </item>
+  </extension>
+  <extension point="kodi.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">Access Furk It Library Playback Options from Kodi</summary>
+    <description lang="en">Access Furk It Library Playback Options from Kodi.</description>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+    <forum></forum>
+    <source></source>
+  </extension>
+</addon>
 </addons>
