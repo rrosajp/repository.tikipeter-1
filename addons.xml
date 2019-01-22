@@ -72,4 +72,52 @@
     <source></source>
   </extension>
 </addon>
+<addon id="skin.enrich.krypton" version="6.1.5" name="Enrich Krypton" provider-name="Tikipeter">
+	<requires>
+		<import addon="xbmc.gui" version="5.12.0"/>
+		<import addon="script.skinshortcuts" version="1.0.10"/>
+    	<import addon="script.skin.helper.service" version="1.1.0"/>
+    	<import addon="script.extendedinfo" version="5.6.0"/>
+    	<import addon="script.skin.helper.colorpicker" version="1.0.1"/>
+    	<import addon="script.skin.helper.widgets" version="1.0.22"/>
+    	<import addon="script.skin.helper.skinbackup" version="1.0.12"/>
+    	<import addon="script.image.resource.select" version="2.0.2"/>
+    	<import addon="service.library.data.provider" version="0.3.0"/>
+	</requires>
+	<extension point="xbmc.gui.skin" debugging="false" effectslowdown="0.75">
+		<res width="1920" height="1080" aspect="16:9" default="true" folder="1080p" />
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en_AU">Enrich Skin by Tikipeter</summary>
+	    <summary lang="en_GB">Enrich Skin by Tikipeter</summary>
+	    <summary lang="en_NZ">Enrich Skin by Tikipeter</summary>
+	    <summary lang="en_US">Enrich Skin by Tikipeter</summary>
+		<description lang="en_AU">Confluence Base with extras added.</description>
+	    <description lang="en_GB">Confluence Base with extras added.</description>
+	    <description lang="en_NZ">Confluence Base with extras added.</description>
+	    <description lang="en_US">Confluence Base with extras added.</description>
+		<platform>all</platform>
+		<license>GNU General Public License version 2</license>
+		<forum></forum>
+		<website></website>
+		<email></email>
+		<source></source>
+		<assets>
+			<icon>resources/icon.png</icon>
+			<fanart>resources/fanart.jpg</fanart>
+			<screenshot>resources/screenshot-01.jpg</screenshot>
+			<screenshot>resources/screenshot-02.jpg</screenshot>
+			<screenshot>resources/screenshot-03.jpg</screenshot>
+			<screenshot>resources/screenshot-04.jpg</screenshot>
+			<screenshot>resources/screenshot-05.jpg</screenshot>
+			<screenshot>resources/screenshot-06.jpg</screenshot>
+			<screenshot>resources/screenshot-07.jpg</screenshot>
+			<screenshot>resources/screenshot-08.jpg</screenshot>
+			<screenshot>resources/screenshot-09.jpg</screenshot>
+			<screenshot>resources/screenshot-10.jpg</screenshot>
+		</assets>
+		<news>
+		</news>
+	</extension>
+</addon>
 </addons>
