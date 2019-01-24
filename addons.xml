@@ -12,7 +12,7 @@
 		<description>Unofficial add-ons repository</description>
 	</extension>
 </addon>
-<addon id="plugin.video.furkit" version="1.1.62" name="Furk It" provider-name="Furk It">
+<addon id="plugin.video.furkit" version="1.1.63" name="Furk It" provider-name="Furk It">
     <requires>
         <import addon="script.module.requests" version="2.3.0"/>
         <import addon="script.module.beautifulsoup4" version="0.6.0"/>
@@ -41,7 +41,7 @@
         </disclaimer>
     </extension>
 </addon>
-<addon id="script.furkit.artwork" version="1.0.5" name="Furk It Artwork" provider-name="tikipeter">
+<addon id="script.furkit.artwork" version="1.0.5" name="Furk It Artwork" provider-name="Furk It">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0"/>
 	</requires>
@@ -52,21 +52,21 @@
 		<platform>all</platform>
 	</extension>
 </addon>
-<addon id="context.furkit.playback.settings" name="Furk It Playback Settings" version="1.0.0" provider-name="Tikipeter">
+<addon id="context.furkit.playback.settings" name="Furk It Playback Settings" version="1.0.1" provider-name="Furk It">
   <requires>
     <import addon="xbmc.python" version="2.25.0"/>
   </requires>
   <extension point="kodi.context.item" library="playback_context_menu.py">
     <provides>executable</provides>	
       <item>
-        <label>Furk It Playback Options...</label>
-        <visible>[String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,episode)] + String.IsEqual(ListItem.FileExtension,strm)</visible>
+        <label>Furk It Playback Settings...</label>
+        <visible>[String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,episode)] + [String.IsEqual(ListItem.FileExtension,strm)| String.IsEmpty(ListItem.FileExtension)]</visible>
       </item>
   </extension>
   <extension point="kodi.addon.metadata">
     <platform>all</platform>
-    <summary lang="en">Access Furk It Library Playback Options from Kodi</summary>
-    <description lang="en">Access Furk It Library Playback Options from Kodi.</description>
+    <summary lang="en">Access Furk It Playback Options from Kodi</summary>
+    <description lang="en">Access Furk It Playback Options from Kodi.</description>
     <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
     <forum></forum>
     <source></source>
