@@ -77,8 +77,8 @@
   </extension>
   <extension point="kodi.addon.metadata">
     <platform>all</platform>
-    <summary lang="en">Access Furk It Playback Settings from Kodi</summary>
-    <description lang="en">Access Furk It Playback Settings from Kodi.</description>
+    <summary lang="en">Access Furk It from Kodi</summary>
+    <description lang="en">Access Furk It Playback Kodi.</description>
     <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
     <forum></forum>
     <source></source>
