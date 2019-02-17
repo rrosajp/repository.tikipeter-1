@@ -52,21 +52,33 @@
 		<platform>all</platform>
 	</extension>
 </addon>
-<addon id="context.furkit.playback.settings" name="Furk It Playback Settings" version="1.0.2" provider-name="Furk It">
+<addon id="context.furkitcontext" name="Furk It Context Menu" version="1.0.0" provider-name="Furk It">
   <requires>
     <import addon="xbmc.python" version="2.25.0"/>
   </requires>
-  <extension point="kodi.context.item" library="playback_context_menu.py">
-    <provides>executable</provides>	
-      <item>
-        <label>Furk It Playback Settings...</label>
-        <visible>[String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,episode)] + [String.IsEqual(ListItem.FileExtension,strm)| String.IsEmpty(ListItem.FileExtension)]</visible>
-      </item>
+  <extension point="kodi.context.item">
+        <menu id="kodi.core.main">
+            <item library="mark_watched.py">
+                <label>Mark Watched Furk It</label>
+                <visible>[String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,episode)] + String.IsEqual(ListItem.Property(furkit_widget),true) + String.IsEqual(ListItem.Property(furkit_playcount),0)</visible>
+            </item>
+            <item library="mark_unwatched.py">
+                <label>Mark Unwatched Furk It</label>
+                <visible>[String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,episode)] + String.IsEqual(ListItem.Property(furkit_widget),true) + String.IsEqual(ListItem.Property(furkit_playcount),1)</visible>
+            </item>
+            <item library="playback_context_menu.py">
+                <label>Furk It Settings</label>
+                <visible>[String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,episode)] + [String.IsEqual(ListItem.FileExtension,strm) | String.IsEqual(ListItem.Property(furkit_widget),true)]</visible>
+            </item>
+        </menu>
+    </extension>
+  <extension point="xbmc.service"
+              library="service.py" start="startup">
   </extension>
   <extension point="kodi.addon.metadata">
     <platform>all</platform>
-    <summary lang="en">Access Furk It Playback Options from Kodi</summary>
-    <description lang="en">Access Furk It Playback Options from Kodi.</description>
+    <summary lang="en">Access Furk It Playback Settings from Kodi</summary>
+    <description lang="en">Access Furk It Playback Settings from Kodi.</description>
     <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
     <forum></forum>
     <source></source>
