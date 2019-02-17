@@ -52,7 +52,7 @@
 		<platform>all</platform>
 	</extension>
 </addon>
-<addon id="context.furkitcontext" name="Furk It Context Menu" version="1.0.0" provider-name="Furk It">
+<addon id="context.furkitcontextmenu" name="Furk It Context Menu" version="1.0.0" provider-name="Furk It">
   <requires>
     <import addon="xbmc.python" version="2.25.0"/>
   </requires>
