@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<addon id="repository.tikipeter" name="Tikipeter's Repository" version="0.0.2" provider-name="Tikipeter">
+<addon id="repository.tikipeter" name="Tikipeter's Repository" version="0.0.3" provider-name="Tikipeter">
 	<extension point="xbmc.addon.repository" name="Tikipeter's Repository">
 		<info compressed="false">https://raw.githubusercontent.com/Tikipeter/repository.tikipeter/master/addons.xml</info>
 		<checksum>https://raw.githubusercontent.com/Tikipeter/repository.tikipeter/master/addons.xml.md5</checksum>
@@ -12,13 +12,13 @@
 		<description>Unofficial add-ons repository</description>
 	</extension>
 </addon>
-<addon id="plugin.video.furkit" version="1.1.88.a" name="Furk It" provider-name="Furk It">
+<addon id="plugin.video.furkit" version="1.1.90" name="Furk It" provider-name="Furk It">
     <requires>
         <import addon="script.module.requests" version="2.3.0"/>
         <import addon="script.module.beautifulsoup4" version="0.6.0"/>
         <import addon="script.furkit.artwork" version="1.0.0"/>
         <import addon="script.module.resolveurl" version="1.0.0"/>
-        <import addon="script.module.universalscrapers" version="1.0.0"/>
+        <import addon="script.module.civitasscrapers" version="0.0.2.4" optional="true" />
     </requires>
     <extension point="xbmc.python.pluginsource"
                library="furkit.py">
