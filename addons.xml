@@ -12,13 +12,13 @@
 		<description>Unofficial add-ons repository</description>
 	</extension>
 </addon>
-<addon id="plugin.video.furkit" version="1.1.91" name="Furk It" provider-name="Furk It">
+<addon id="plugin.video.furkit" version="1.1.95" name="Furk It" provider-name="Furk It">
     <requires>
         <import addon="script.module.requests" version="2.3.0"/>
         <import addon="script.module.beautifulsoup4" version="0.6.0"/>
         <import addon="script.furkit.artwork" version="1.0.0"/>
         <import addon="script.module.resolveurl" version="1.0.0"/>
-        <import addon="script.module.civitasscrapers" version="0.0.2.4" optional="true" />
+        <import addon="script.module.furkitscrapers" version="0.0.0.1" optional="true" />
     </requires>
     <extension point="xbmc.python.pluginsource"
                library="furkit.py">
@@ -51,6 +51,29 @@
 		<description></description>
 		<platform>all</platform>
 	</extension>
+</addon>
+<addon id="script.module.furkitscrapers" name="Furk It Scrapers Module" version="0.0.5" provider-name="Furk It">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0" />
+        <import addon="script.module.beautifulsoup4"/>
+    </requires>
+    <extension point="xbmc.python.module" library="lib" />
+    <extension point="xbmc.python.pluginsource" library="lib/default.py">
+        <provides>executable</provides>
+    </extension>
+        <extension point="xbmc.addon.metadata">
+            <platform>all</platform>
+            <summary lang="en">Furk It Scrapers Module</summary>
+            <description>External Sources for the Furk It add-on.</description>
+                <disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.[CR]The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.[CR]This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.</disclaimer>
+    <platform>all</platform>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+    <assets>
+        <icon>icon.png</icon>
+        <fanart>fanart.jpg</fanart>
+    </assets>
+    <news></news>
+    </extension>
 </addon>
 <addon id="context.furkitcontextmenu" name="Furk It Context Menu" version="1.0.0" provider-name="Furk It">
   <requires>
