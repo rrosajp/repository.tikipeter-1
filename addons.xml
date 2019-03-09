@@ -41,7 +41,7 @@
         </disclaimer>
     </extension>
 </addon>
-<addon id="script.furkit.artwork" version="1.0.5" name="Furk It Artwork" provider-name="Furk It">
+<addon id="script.furkit.artwork" version="1.0.6" name="Furk It Artwork" provider-name="Furk It">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0"/>
 	</requires>
