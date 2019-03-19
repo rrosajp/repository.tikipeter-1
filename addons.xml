@@ -12,7 +12,7 @@
 		<description>Unofficial add-ons repository</description>
 	</extension>
 </addon>
-<addon id="plugin.video.furkit" version="1.2.03" name="Furk It" provider-name="Furk It">
+<addon id="plugin.video.furkit" version="1.2.04" name="Furk It" provider-name="Furk It">
     <requires>
         <import addon="script.module.requests" version="2.3.0"/>
         <import addon="script.module.beautifulsoup4" version="0.6.0"/>
@@ -52,7 +52,7 @@
 		<platform>all</platform>
 	</extension>
 </addon>
-<addon id="script.module.furkitscrapers" name="Furk It Scrapers Module" version="1.0.02" provider-name="Furk It">
+<addon id="script.module.furkitscrapers" name="Furk It Scrapers Module" version="1.0.03" provider-name="Furk It">
     <requires>
         <import addon="xbmc.python" version="2.1.0" />
         <import addon="script.module.beautifulsoup4"/>
