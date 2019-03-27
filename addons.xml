@@ -52,7 +52,7 @@
 		<platform>all</platform>
 	</extension>
 </addon>
-<addon id="script.module.furkitscrapers" name="Furk It Scrapers Module" version="1.0.08" provider-name="Furk It">
+<addon id="script.module.furkitscrapers" name="Furk It Scrapers Module" version="1.0.09" provider-name="Furk It">
     <requires>
         <import addon="xbmc.python" version="2.1.0" />
         <import addon="script.module.beautifulsoup4"/>
