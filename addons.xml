@@ -1,158 +1,192 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<addon id="repository.tikipeter" name="Tikipeter's Repository" version="0.0.3" provider-name="Tikipeter">
-	<extension point="xbmc.addon.repository" name="Tikipeter's Repository">
-		<info compressed="false">https://raw.githubusercontent.com/Tikipeter/repository.tikipeter/master/addons.xml</info>
-		<checksum>https://raw.githubusercontent.com/Tikipeter/repository.tikipeter/master/addons.xml.md5</checksum>
-		<datadir zip="true">https://raw.githubusercontent.com/Tikipeter/repository.tikipeter/master/zip</datadir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<platform>all</platform>
-		<summary>Tikipeter's Repository</summary>
-		<description>Unofficial add-ons repository</description>
-	</extension>
-</addon>
-<addon id="plugin.video.furkit" version="1.2.18" name="Furk It" provider-name="Furk It">
-    <requires>
-        <import addon="script.module.requests" version="2.3.0"/>
-        <import addon="script.module.beautifulsoup4" version="0.6.0"/>
-        <import addon="script.furkit.artwork" version="1.0.0"/>
-        <import addon="script.module.resolveurl" version="1.0.0"/>
-        <import addon="script.module.furkitscrapers" version="0.0.0.1"/>
-    </requires>
-    <extension point="xbmc.python.pluginsource"
-               library="furkit.py">
-        <provides>audio video</provides>
-    </extension>
-    <extension point="xbmc.service"
-                library="service.py" start="startup">
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary>
-        	Furk.net account and media access.
-        </summary>
-        <description>
-            Furk.net account and media access.
-        </description>
-        <platform>all</platform>
-        <minversion>29000</minversion>
-        <disclaimer>
-            You must have an account at www.furk.net for this addon to function fully.
-        </disclaimer>
-    </extension>
-</addon>
-<addon id="script.furkit.artwork" version="1.0.6" name="Furk It Artwork" provider-name="Furk It">
-	<requires>
-		<import addon="xbmc.python" version="2.19.0"/>
-	</requires>
-	<extension point="xbmc.python.module" library="lib" />
-	<extension point="xbmc.addon.metadata">
-		<summary>Themes for the Furk It Addon</summary>
-		<description></description>
-		<platform>all</platform>
-	</extension>
-</addon>
-<addon id="script.module.furkitscrapers" name="Furk It Scrapers Module" version="1.0.22" provider-name="Furk It">
-    <requires>
-        <import addon="xbmc.python" version="2.1.0" />
-        <import addon="script.module.beautifulsoup4"/>
-    </requires>
-    <extension point="xbmc.python.module" library="lib" />
-    <extension point="xbmc.python.pluginsource" library="lib/default.py">
-        <provides>executable</provides>
-    </extension>
+    <addon id="repository.tikipeter" name="Tikipeter's Repository" version="0.0.3" provider-name="Tikipeter">
+        <extension point="xbmc.addon.repository" name="Tikipeter's Repository">
+            <info compressed="false">https://raw.githubusercontent.com/Tikipeter/repository.tikipeter/master/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/Tikipeter/repository.tikipeter/master/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/Tikipeter/repository.tikipeter/master/zip</datadir>
+        </extension>
+        <extension point="xbmc.addon.metadata">
+            <platform>all</platform>
+            <summary>Tikipeter's Repository</summary>
+            <description>Unofficial add-ons repository</description>
+        </extension>
+    </addon>
+    <addon id="plugin.video.furkit" version="1.2.19" name="Furk It" provider-name="Furk It">
+        <requires>
+            <import addon="script.module.requests" version="2.3.0"/>
+            <import addon="script.module.beautifulsoup4" version="0.6.0"/>
+            <import addon="script.furkit.artwork" version="1.0.0"/>
+            <import addon="script.module.furkitscrapers" version="1.0.0" />
+            <import addon="script.module.furkitmeta" version="1.0.0" />
+            <import addon="script.module.resolveurl" version="1.0.0"/>
+        </requires>
+        <extension point="xbmc.python.pluginsource" library="furkit.py">
+            <provides>audio video</provides>
+        </extension>
+        <extension point="xbmc.service" library="service.py" start="startup">
+        </extension>
+        <extension point="xbmc.addon.metadata">
+            <summary>
+                Furk.net account and media access.
+            </summary>
+            <description>
+                Furk.net account and media access.
+            </description>
+            <platform>all</platform>
+            <disclaimer>
+                You must have an account at www.furk.net for this addon to function fully.
+            </disclaimer>
+            <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+            <assets>
+                <icon>icon.png</icon>
+                <fanart>fanart.png</fanart>
+            </assets>
+            <news>
+                [COLOR dodgerblue][B]Version 1.2.19[/B][/COLOR]
+                - Moved Metadata handling to seperate module.
+            </news>
+        </extension>
+    </addon>
+    <addon id="script.furkit.artwork" version="1.0.7" name="Furk It Artwork" provider-name="Furk It">
+        <requires>
+            <import addon="xbmc.python" version="2.19.0"/>
+        </requires>
+        <extension point="xbmc.python.module" library="lib" />
+        <extension point="xbmc.addon.metadata">
+            <summary>Themes for the Furk It Addon</summary>
+            <description>Themes for the Furk It Addon</description>
+            <platform>all</platform>
+            <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+            <assets>
+                <icon>icon.png</icon>
+                <fanart>fanart.png</fanart>
+            </assets>
+        </extension>
+    </addon>
+    <addon id="script.module.furkitmeta" version="1.0.0" name="Furk It Meta Module" provider-name="Furk It">
+        <requires>
+            <import addon="xbmc.python" version="2.19.0"/>
+        </requires>
+        <extension point="xbmc.python.module" library="lib" />
+        <extension point="xbmc.python.pluginsource" library="lib/default.py">
+            <provides>executable</provides>
+        </extension>
+        <extension point="xbmc.addon.metadata">
+            <summary>Metadata for the Furk It Addon</summary>
+            <description>Metadata for the Furk It Addon</description>
+            <platform>all</platform>
+            <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+            <assets>
+                <icon>icon.png</icon>
+                <fanart>fanart.png</fanart>
+            </assets>
+            <news>
+                [B]Version 1.0.0[/B]
+                - Initial Version.
+            </news>
+        </extension>
+    </addon>
+    <addon id="script.module.furkitscrapers" name="Furk It Scrapers Module" version="1.0.23" provider-name="Furk It">
+        <requires>
+            <import addon="xbmc.python" version="2.1.0" />
+            <import addon="script.module.beautifulsoup4"/>
+        </requires>
+        <extension point="xbmc.python.module" library="lib" />
+        <extension point="xbmc.python.pluginsource" library="lib/default.py">
+            <provides>executable</provides>
+        </extension>
         <extension point="xbmc.addon.metadata">
             <platform>all</platform>
             <summary lang="en">Furk It Scrapers Module</summary>
             <description>External Sources for the Furk It add-on.</description>
-                <disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.[CR]The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.[CR]This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.</disclaimer>
-    <platform>all</platform>
-    <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
-    <assets>
-        <icon>icon.png</icon>
-        <fanart>fanart.jpg</fanart>
-    </assets>
-    <news></news>
-    </extension>
-</addon>
-<addon id="context.furkitcontextmenu" name="Furk It Context Menu" version="1.0.01" provider-name="Furk It">
-  <requires>
-    <import addon="xbmc.python" version="2.25.0"/>
-  </requires>
-  <extension point="kodi.context.item">
-        <menu id="kodi.core.main">
-            <item library="mark_watched.py">
-                <label>Mark Watched Furk It</label>
-                <visible>[String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,episode)] + String.IsEqual(ListItem.Property(furkit_widget),true) + String.IsEqual(ListItem.Property(furkit_playcount),0)</visible>
-            </item>
-            <item library="mark_unwatched.py">
-                <label>Mark Unwatched Furk It</label>
-                <visible>[String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,episode)] + String.IsEqual(ListItem.Property(furkit_widget),true) + String.IsEqual(ListItem.Property(furkit_playcount),1)</visible>
-            </item>
-            <item library="playback_context_menu.py">
-                <label>Furk It Settings</label>
-                <visible>[String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,episode)] + [String.IsEqual(ListItem.FileExtension,strm) | String.IsEqual(ListItem.Property(furkit_widget),true)]</visible>
-            </item>
-        </menu>
-    </extension>
-  <extension point="xbmc.service"
-              library="service.py" start="startup">
-  </extension>
-  <extension point="kodi.addon.metadata">
-    <platform>all</platform>
-    <summary lang="en">Access Furk It from Kodi</summary>
-    <description lang="en">Access Furk It Playback Kodi.</description>
-    <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
-    <forum></forum>
-    <source></source>
-  </extension>
-</addon>
-<addon id="skin.enrich.krypton" version="6.1.6" name="Enrich Krypton" provider-name="Tikipeter">
-	<requires>
-		<import addon="xbmc.gui" version="5.12.0"/>
-		<import addon="script.skinshortcuts" version="1.0.10"/>
-    	<import addon="script.skin.helper.service" version="1.1.0"/>
-    	<import addon="script.extendedinfo" version="5.6.0"/>
-    	<import addon="script.skin.helper.colorpicker" version="1.0.1"/>
-    	<import addon="script.skin.helper.widgets" version="1.0.22"/>
-    	<import addon="script.skin.helper.skinbackup" version="1.0.12"/>
-    	<import addon="script.image.resource.select" version="2.0.2"/>
-    	<import addon="service.library.data.provider" version="0.3.0"/>
-	</requires>
-	<extension point="xbmc.gui.skin" debugging="false" effectslowdown="0.75">
-		<res width="1920" height="1080" aspect="16:9" default="true" folder="1080p" />
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary lang="en_AU">Enrich Skin by Tikipeter</summary>
-	    <summary lang="en_GB">Enrich Skin by Tikipeter</summary>
-	    <summary lang="en_NZ">Enrich Skin by Tikipeter</summary>
-	    <summary lang="en_US">Enrich Skin by Tikipeter</summary>
-		<description lang="en_AU">Confluence Base with extras added.</description>
-	    <description lang="en_GB">Confluence Base with extras added.</description>
-	    <description lang="en_NZ">Confluence Base with extras added.</description>
-	    <description lang="en_US">Confluence Base with extras added.</description>
-		<platform>all</platform>
-		<license>GNU General Public License version 2</license>
-		<forum></forum>
-		<website></website>
-		<email></email>
-		<source></source>
-		<assets>
-			<icon>icon.png</icon>
-			<fanart>fanart.jpg</fanart>
-			<screenshot>resources/screenshot-01.jpg</screenshot>
-			<screenshot>resources/screenshot-02.jpg</screenshot>
-			<screenshot>resources/screenshot-03.jpg</screenshot>
-			<screenshot>resources/screenshot-04.jpg</screenshot>
-			<screenshot>resources/screenshot-05.jpg</screenshot>
-			<screenshot>resources/screenshot-06.jpg</screenshot>
-			<screenshot>resources/screenshot-07.jpg</screenshot>
-			<screenshot>resources/screenshot-08.jpg</screenshot>
-			<screenshot>resources/screenshot-09.jpg</screenshot>
-			<screenshot>resources/screenshot-10.jpg</screenshot>
-		</assets>
-		<news>
-		</news>
-	</extension>
-</addon>
+            <disclaimer lang="en">
+                The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.[CR]The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.[CR]This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.
+            </disclaimer>
+            <platform>all</platform>
+            <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+            <assets>
+                <icon>icon.png</icon>
+                <fanart>fanart.png</fanart>
+            </assets>
+        </extension>
+    </addon>
+    <addon id="context.furkitcontextmenu" name="Furk It Context Menu" version="1.0.01" provider-name="Furk It">
+        <requires>
+        <import addon="xbmc.python" version="2.25.0"/>
+        </requires>
+        <extension point="kodi.context.item">
+            <menu id="kodi.core.main">
+                <item library="mark_watched.py">
+                    <label>Mark Watched Furk It</label>
+                    <visible>[String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,episode)] + String.IsEqual(ListItem.Property(furkit_widget),true) + String.IsEqual(ListItem.Property(furkit_playcount),0)</visible>
+                </item>
+                <item library="mark_unwatched.py">
+                    <label>Mark Unwatched Furk It</label>
+                    <visible>[String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,episode)] + String.IsEqual(ListItem.Property(furkit_widget),true) + String.IsEqual(ListItem.Property(furkit_playcount),1)</visible>
+                </item>
+                <item library="playback_context_menu.py">
+                    <label>Furk It Settings</label>
+                    <visible>[String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,episode)] + [String.IsEqual(ListItem.FileExtension,strm) | String.IsEqual(ListItem.Property(furkit_widget),true)]</visible>
+                </item>
+            </menu>
+        </extension>
+        <extension point="xbmc.service"
+                  library="service.py" start="startup">
+        </extension>
+        <extension point="kodi.addon.metadata">
+            <platform>all</platform>
+            <summary lang="en">Access Furk It from Kodi</summary>
+            <description lang="en">Access Furk It Playback Kodi.</description>
+            <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+            <forum></forum>
+            <source></source>
+        </extension>
+    </addon>
+    <addon id="skin.enrich.krypton" version="6.1.6" name="Enrich Krypton" provider-name="Tikipeter">
+        <requires>
+            <import addon="xbmc.gui" version="5.12.0"/>
+            <import addon="script.skinshortcuts" version="1.0.10"/>
+            <import addon="script.skin.helper.service" version="1.1.0"/>
+            <import addon="script.extendedinfo" version="5.6.0"/>
+            <import addon="script.skin.helper.colorpicker" version="1.0.1"/>
+            <import addon="script.skin.helper.widgets" version="1.0.22"/>
+            <import addon="script.skin.helper.skinbackup" version="1.0.12"/>
+            <import addon="script.image.resource.select" version="2.0.2"/>
+            <import addon="service.library.data.provider" version="0.3.0"/>
+        </requires>
+        <extension point="xbmc.gui.skin" debugging="false" effectslowdown="0.75">
+            <res width="1920" height="1080" aspect="16:9" default="true" folder="1080p" />
+        </extension>
+        <extension point="xbmc.addon.metadata">
+            <summary lang="en_AU">Enrich Skin by Tikipeter</summary>
+            <summary lang="en_GB">Enrich Skin by Tikipeter</summary>
+            <summary lang="en_NZ">Enrich Skin by Tikipeter</summary>
+            <summary lang="en_US">Enrich Skin by Tikipeter</summary>
+            <description lang="en_AU">Confluence Base with extras added.</description>
+            <description lang="en_GB">Confluence Base with extras added.</description>
+            <description lang="en_NZ">Confluence Base with extras added.</description>
+            <description lang="en_US">Confluence Base with extras added.</description>
+            <platform>all</platform>
+            <license>GNU General Public License version 2</license>
+            <forum></forum>
+            <website></website>
+            <email></email>
+            <source></source>
+            <assets>
+                <icon>icon.png</icon>
+                <fanart>fanart.jpg</fanart>
+                <screenshot>resources/screenshot-01.jpg</screenshot>
+                <screenshot>resources/screenshot-02.jpg</screenshot>
+                <screenshot>resources/screenshot-03.jpg</screenshot>
+                <screenshot>resources/screenshot-04.jpg</screenshot>
+                <screenshot>resources/screenshot-05.jpg</screenshot>
+                <screenshot>resources/screenshot-06.jpg</screenshot>
+                <screenshot>resources/screenshot-07.jpg</screenshot>
+                <screenshot>resources/screenshot-08.jpg</screenshot>
+                <screenshot>resources/screenshot-09.jpg</screenshot>
+                <screenshot>resources/screenshot-10.jpg</screenshot>
+            </assets>
+        </extension>
+    </addon>
 </addons>
