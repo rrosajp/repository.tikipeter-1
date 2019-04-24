@@ -42,10 +42,6 @@
                 <icon>icon.png</icon>
                 <fanart>fanart.png</fanart>
             </assets>
-            <news>
-                [COLOR dodgerblue][B]Version 1.2.19[/B][/COLOR]
-                - Moved Metadata handling to seperate module.
-            </news>
         </extension>
     </addon>
     <addon id="script.furkit.artwork" version="1.0.7" name="Furk It Artwork" provider-name="Furk It">
