@@ -60,7 +60,7 @@
             </assets>
         </extension>
     </addon>
-    <addon id="script.module.furkitmeta" version="1.0.03" name="Furk It Meta Module" provider-name="Furk It">
+    <addon id="script.module.furkitmeta" version="1.0.04" name="Furk It Meta Module" provider-name="Furk It">
         <requires>
             <import addon="xbmc.python" version="2.19.0"/>
         </requires>
