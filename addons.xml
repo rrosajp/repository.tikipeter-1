@@ -12,7 +12,7 @@
             <description>Unofficial add-ons repository</description>
         </extension>
     </addon>
-    <addon id="plugin.video.furkit" version="1.2.29" name="Furk It" provider-name="Furk It">
+    <addon id="plugin.video.furkit" version="1.2.29a" name="Furk It" provider-name="Furk It">
         <requires>
             <import addon="script.module.requests" version="2.3.0"/>
             <import addon="script.module.beautifulsoup4" version="0.6.0"/>
