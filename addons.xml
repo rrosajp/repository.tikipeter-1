@@ -12,12 +12,12 @@
             <description>Unofficial add-ons repository</description>
         </extension>
     </addon>
-    <addon id="plugin.video.furkit" version="1.2.34" name="Furk It" provider-name="Furk It">
+    <addon id="plugin.video.furkit" version="1.2.35" name="Furk It" provider-name="Furk It">
         <requires>
             <import addon="script.module.requests" version="2.3.0"/>
             <import addon="script.module.beautifulsoup4" version="0.6.0"/>
-            <import addon="script.furkit.artwork" version="1.0.0"/>
-            <import addon="script.module.furkitscrapers" version="1.0.0" />
+            <import addon="script.tiki.artwork" version="1.0.0"/>
+            <import addon="script.module.tikiscrapers" version="1.0.0" />
             <import addon="script.module.tikimeta" version="1.0.0" />
             <import addon="script.module.resolveurl" version="1.0.0"/>
         </requires>
@@ -42,16 +42,19 @@
                 <icon>icon.png</icon>
                 <fanart>fanart.png</fanart>
             </assets>
+            <news>
+                INFO: For latest changes see Changelog within Tools of add-on.
+            </news>
         </extension>
     </addon>
-    <addon id="script.furkit.artwork" version="1.0.08" name="Furk It Artwork" provider-name="Furk It">
+    <addon id="script.tiki.artwork" version="1.1.0" name="Tiki Artwork" provider-name="Tiki">
         <requires>
             <import addon="xbmc.python" version="2.19.0"/>
         </requires>
         <extension point="xbmc.python.module" library="lib" />
         <extension point="xbmc.addon.metadata">
-            <summary>Themes for the Furk It Addon</summary>
-            <description>Themes for the Furk It Addon</description>
+            <summary>Themes for Addons</summary>
+            <description>Themes for Addons</description>
             <platform>all</platform>
             <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
             <assets>
@@ -60,26 +63,7 @@
             </assets>
         </extension>
     </addon>
-    <addon id="script.module.furkitmeta" version="1.0.06" name="Furk It Meta Module" provider-name="Furk It">
-        <requires>
-            <import addon="xbmc.python" version="2.19.0"/>
-        </requires>
-        <extension point="xbmc.python.module" library="lib" />
-        <extension point="xbmc.python.pluginsource" library="lib/default.py">
-            <provides>executable</provides>
-        </extension>
-        <extension point="xbmc.addon.metadata">
-            <summary>Metadata for the Furk It Addon</summary>
-            <description>Metadata for the Furk It Addon</description>
-            <platform>all</platform>
-            <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
-            <assets>
-                <icon>icon.png</icon>
-                <fanart>fanart.png</fanart>
-            </assets>
-        </extension>
-    </addon>
-    <addon id="script.module.tikimeta" version="1.1.00" name="Tiki Meta Module" provider-name="Tiki">
+    <addon id="script.module.tikimeta" version="1.1.01" name="Tiki Meta Module" provider-name="Tiki">
         <requires>
             <import addon="xbmc.python" version="2.19.0"/>
         </requires>
@@ -100,7 +84,7 @@
             </news>
         </extension>
     </addon>
-    <addon id="script.module.furkitscrapers" name="Furk It Scrapers Module" version="1.0.30" provider-name="Furk It">
+    <addon id="script.module.tikiscrapers" name="Tiki Scrapers Module" version="1.1.00" provider-name="Tiki">
         <requires>
             <import addon="xbmc.python" version="2.1.0" />
             <import addon="script.module.beautifulsoup4"/>
@@ -111,8 +95,8 @@
         </extension>
         <extension point="xbmc.addon.metadata">
             <platform>all</platform>
-            <summary lang="en">Furk It Scrapers Module</summary>
-            <description>External Sources for the Furk It add-on.</description>
+            <summary lang="en">External Sources for Addons</summary>
+            <description>External Sources for Addons</description>
             <disclaimer lang="en">
                 The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.[CR]The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.[CR]This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.
             </disclaimer>
@@ -122,6 +106,8 @@
                 <icon>icon.png</icon>
                 <fanart>fanart.png</fanart>
             </assets>
+            <news>
+            </news>
         </extension>
     </addon>
     <addon id="context.furkitcontextmenu" name="Furk It Context Menu" version="1.0.01" provider-name="Furk It">
