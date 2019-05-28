@@ -47,7 +47,7 @@
             </news>
         </extension>
     </addon>
-    <addon id="plugin.video.fen" version="1.5.01" name="Fen" provider-name="Tiki">
+    <addon id="plugin.video.fen" version="1.5.02" name="Fen" provider-name="Tiki">
         <requires>
             <import addon="script.module.requests" version="2.3.0"/>
             <import addon="script.module.beautifulsoup4" version="0.6.0"/>
