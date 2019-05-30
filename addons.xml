@@ -47,7 +47,7 @@
             </news>
         </extension>
     </addon>
-    <addon id="plugin.video.fen" version="1.5.02a" name="Fen" provider-name="Tiki">
+    <addon id="plugin.video.fen" version="1.5.03" name="Fen" provider-name="Tiki">
         <requires>
             <import addon="script.module.requests" version="2.3.0"/>
             <import addon="script.module.beautifulsoup4" version="0.6.0"/>
@@ -143,38 +143,6 @@
             </assets>
             <news>
             </news>
-        </extension>
-    </addon>
-    <addon id="context.furkitcontextmenu" name="Furk It Context Menu" version="1.0.01" provider-name="Furk It">
-        <requires>
-            <import addon="xbmc.python" version="2.25.0"/>
-        </requires>
-        <extension point="kodi.context.item">
-            <menu id="kodi.core.main">
-                <item library="mark_watched.py">
-                    <label>Mark Watched Furk It</label>
-                    <visible>[String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,episode)] + String.IsEqual(ListItem.Property(furkit_widget),true) + String.IsEqual(ListItem.Property(furkit_playcount),0)</visible>
-                </item>
-                <item library="mark_unwatched.py">
-                    <label>Mark Unwatched Furk It</label>
-                    <visible>[String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,episode)] + String.IsEqual(ListItem.Property(furkit_widget),true) + String.IsEqual(ListItem.Property(furkit_playcount),1)</visible>
-                </item>
-                <item library="playback_context_menu.py">
-                    <label>Furk It Settings</label>
-                    <visible>[String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,episode)] + [String.IsEqual(ListItem.FileExtension,strm) | String.IsEqual(ListItem.Property(furkit_widget),true)]</visible>
-                </item>
-            </menu>
-        </extension>
-        <extension point="xbmc.service"
-                  library="service.py" start="startup">
-        </extension>
-        <extension point="kodi.addon.metadata">
-            <platform>all</platform>
-            <summary lang="en">Access Furk It from Kodi</summary>
-            <description lang="en">Access Furk It Playback Kodi.</description>
-            <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
-            <forum></forum>
-            <source></source>
         </extension>
     </addon>
     <addon id="context.fencontextmenu" name="Fen Context Menu" version="1.0.01" provider-name="Tiki">
