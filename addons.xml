@@ -12,42 +12,7 @@
             <description>Unofficial add-ons repository</description>
         </extension>
     </addon>
-    <addon id="plugin.video.furkit" version="1.2.36" name="Furk It" provider-name="Furk It">
-        <requires>
-            <import addon="script.module.requests" version="2.3.0"/>
-            <import addon="script.module.beautifulsoup4" version="0.6.0"/>
-            <import addon="script.tiki.artwork" version="1.0.0"/>
-            <import addon="script.module.tikiscrapers" version="1.0.0" />
-            <import addon="script.module.tikimeta" version="1.0.0" />
-            <import addon="script.module.resolveurl" version="1.0.0"/>
-        </requires>
-        <extension point="xbmc.python.pluginsource" library="furkit.py">
-            <provides>audio video</provides>
-        </extension>
-        <extension point="xbmc.service" library="service.py" start="startup">
-        </extension>
-        <extension point="xbmc.addon.metadata">
-            <summary>
-                Furk.net account and media access.
-            </summary>
-            <description>
-                Furk.net account and media access.
-            </description>
-            <platform>all</platform>
-            <disclaimer>
-                You must have an account at www.furk.net for this addon to function fully.
-            </disclaimer>
-            <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
-            <assets>
-                <icon>icon.png</icon>
-                <fanart>fanart.png</fanart>
-            </assets>
-            <news>
-                INFO: For latest changes see Changelog within Tools of add-on.
-            </news>
-        </extension>
-    </addon>
-    <addon id="plugin.video.fen" version="1.5.03" name="Fen" provider-name="Tiki">
+    <addon id="plugin.video.fen" version="1.5.04" name="Fen" provider-name="Tiki">
         <requires>
             <import addon="script.module.requests" version="2.3.0"/>
             <import addon="script.module.beautifulsoup4" version="0.6.0"/>
