@@ -12,7 +12,7 @@
             <description>Unofficial add-ons repository</description>
         </extension>
     </addon>
-    <addon id="plugin.video.fen" version="1.5.19" name="Fen" provider-name="Tiki">
+    <addon id="plugin.video.fen" version="1.5.20" name="Fen" provider-name="Tiki">
         <requires>
             <import addon="script.module.requests" version="2.3.0"/>
             <import addon="script.module.beautifulsoup4" version="0.6.0"/>
@@ -31,8 +31,9 @@
                 Specializes in Furk and Easynews.
             </summary>
             <description>
-    Specializes in Furk and Easynews(web) account access.
-    Also provides external Exodus style providers for those without a Furk or Easynews(web) account.
+Specializes in Furk and Easynews(web) account access.
+Also provides external providers for those without a Furk or Easynews(web) account.
+Please Note: This add-on is NOT an Exodus fork, and as such will behave differently to an Exodus fork.
             </description>
             <platform>all</platform>
             <disclaimer>
