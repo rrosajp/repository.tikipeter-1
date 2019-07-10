@@ -59,7 +59,7 @@ Please Note: This add-on is NOT an Exodus fork, and as such will behave differen
             <platform>all</platform>
             <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
             <assets>
-                <icon>icon2.png</icon>
+                <icon>icon.png</icon>
                 <fanart>fanart.png</fanart>
             </assets>
         </extension>
