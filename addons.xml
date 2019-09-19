@@ -85,7 +85,7 @@ Please Note: This add-on is NOT an Exodus fork, and as such will behave differen
             </news>
         </extension>
     </addon>
-    <addon id="script.module.tikiscrapers" name="Tiki Scrapers Module" version="1.1.13" provider-name="Tiki">
+    <addon id="script.module.tikiscrapers" name="Tiki Scrapers Module" version="1.1.14" provider-name="Tiki">
         <requires>
             <import addon="xbmc.python" version="2.1.0" />
             <import addon="script.module.beautifulsoup4"/>
