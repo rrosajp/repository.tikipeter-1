@@ -17,23 +17,23 @@
             <import addon="script.module.requests" version="2.3.0"/>
             <import addon="script.module.beautifulsoup4" version="0.6.0"/>
             <import addon="script.tiki.artwork" version="1.0.0"/>
-            <import addon="script.module.tikiscrapers" version="1.0.0" />
             <import addon="script.module.tikimeta" version="1.0.0" />
             <import addon="script.module.resolveurl" version="1.0.0"/>
+            <import addon="script.module.openscrapers"/>
         </requires>
-        <extension point="xbmc.python.pluginsource" library="fen.py">
-            <provides>audio video</provides>
+        <extension point="xbmc.python.pluginsource" library="resources/lib/fen.py">
+            <provides>video</provides>
         </extension>
-        <extension point="xbmc.service" library="service.py" start="startup">
-        </extension>
+        <extension point="xbmc.service" library="resources/lib/services.py" start="startup"/>
+        <extension point="xbmc.python.module" library="resources/lib/"/>
         <extension point="xbmc.addon.metadata">
             <summary>
                 Specializes in Furk and Easynews.
             </summary>
             <description>
-Specializes in Furk and Easynews(web) account access.
-Also provides external providers for those without a Furk or Easynews(web) account.
-Please Note: This add-on is NOT an Exodus fork, and as such will behave differently to an Exodus fork.
+    Specializes in Furk and Easynews(web) account access.
+    Also utilizes Openscrapers for those without a Furk or Easynews(web) account.
+    Please Note: This add-on is NOT an Exodus fork, and as such will behave differently to an Exodus fork.
             </description>
             <platform>all</platform>
             <disclaimer>
