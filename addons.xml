@@ -12,7 +12,7 @@
             <description>Unofficial add-ons repository</description>
         </extension>
     </addon>
-    <addon id="plugin.video.fen" version="1.5.94b" name="Fen" provider-name="Tiki">
+    <addon id="plugin.video.fen" version="1.5.94c" name="Fen" provider-name="Tiki">
         <requires>
             <import addon="script.module.requests" version="2.3.0"/>
             <import addon="script.module.beautifulsoup4" version="0.6.0"/>
