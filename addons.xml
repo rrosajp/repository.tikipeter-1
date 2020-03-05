@@ -91,21 +91,29 @@
         </requires>
         <extension point="kodi.context.item">
             <menu id="kodi.core.main">
-                <item library="fen_browse_into.py">
+                <item library="lib/refresh_widgets.py">
+                    <label>[B]Fen Refresh Widgets[/B]</label>
+                    <visible>String.IsEqual(ListItem.Property(fen_widget),true)</visible>
+                </item>
+                <item library="lib/browse_into.py">
                     <label>[B]Fen Browse Series[/B]</label>
                     <visible>String.IsEqual(ListItem.dbtype,episode) + String.IsEqual(ListItem.Property(fen_widget),true)</visible>
                 </item>
-                <item library="fen_mark_watched.py">
+                <item library="lib/mark_watched.py">
                     <label>[B]Fen Mark Watched[/B]</label>
                     <visible>[String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,episode)] + String.IsEqual(ListItem.Property(fen_widget),true) + String.IsEqual(ListItem.Property(fen_playcount),0)</visible>
                 </item>
-                <item library="fen_mark_unwatched.py">
+                <item library="lib/mark_unwatched.py">
                     <label>[B]Fen Mark Unwatched[/B]</label>
                     <visible>[String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,episode)] + String.IsEqual(ListItem.Property(fen_widget),true) + String.IsEqual(ListItem.Property(fen_playcount),1)</visible>
                 </item>
-                <item library="fen_playback_context_menu.py">
-                    <label>[B]Fen Settings[/B]</label>
-                    <visible>[String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,episode)] + [String.IsEqual(ListItem.FileExtension,strm) | String.IsEqual(ListItem.Property(fen_widget),true)]</visible>
+                <item library="lib/add_remove.py">
+                    <label>[B]Fen Add/Remove[/B]</label>
+                    <visible>[String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,tvshow)] + String.IsEqual(ListItem.Property(fen_widget),true)</visible>
+                </item>
+                <item library="lib/options_menu.py">
+                    <label>[B]Fen Options[/B]</label>
+                    <visible>[String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,tvshow) | String.IsEqual(ListItem.dbtype,episode)] + [String.IsEqual(ListItem.FileExtension,strm) | String.IsEqual(ListItem.Property(fen_widget),true)]</visible>
                 </item>
             </menu>
         </extension>
