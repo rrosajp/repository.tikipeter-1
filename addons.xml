@@ -12,7 +12,7 @@
             <description>Unofficial add-ons repository</description>
         </extension>
     </addon>
-    <addon id="plugin.video.fen" version="1.6.04" name="Fen" provider-name="Tiki">
+    <addon id="plugin.video.fen" version="1.6.05" name="Fen" provider-name="Tiki">
         <requires>
             <import addon="script.module.requests" version="2.3.0"/>
             <import addon="script.module.beautifulsoup4" version="0.6.0"/>
@@ -64,7 +64,7 @@
             </assets>
         </extension>
     </addon>
-    <addon id="script.module.tikimeta" version="1.1.36" name="Tiki Meta Module" provider-name="Tiki">
+    <addon id="script.module.tikimeta" version="1.1.37" name="Tiki Meta Module" provider-name="Tiki">
         <requires>
             <import addon="xbmc.python" version="2.19.0"/>
         </requires>
