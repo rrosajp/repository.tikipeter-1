@@ -76,7 +76,7 @@
             </assets>
         </extension>
     </addon>
-    <addon id="script.module.tikimeta" version="1.1.38" name="Tiki Meta Module" provider-name="Tiki">
+    <addon id="script.module.tikimeta" version="1.1.39" name="Tiki Meta Module" provider-name="Tiki">
         <requires>
             <import addon="xbmc.python" version="2.19.0"/>
         </requires>
