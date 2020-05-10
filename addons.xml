@@ -97,7 +97,7 @@
             </news>
         </extension>
     </addon>
-    <addon id="context.fencontextmenu" name="Fen Context Menu" version="1.0.06" provider-name="Tiki">
+    <addon id="context.fencontextmenu" name="Fen Context Menu" version="1.0.07" provider-name="Tiki">
         <requires>
             <import addon="xbmc.python" version="2.25.0"/>
         </requires>
@@ -121,6 +121,10 @@
                 </item>
                 <item library="lib/add_remove.py">
                     <label>[B]Fen Add/Remove[/B]</label>
+                    <visible>[String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,tvshow)] + String.IsEqual(ListItem.Property(fen_widget),true)</visible>
+                </item>
+                <item library="lib/extras.py">
+                    <label>[B]Fen Extras...[/B]</label>
                     <visible>[String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,tvshow)] + String.IsEqual(ListItem.Property(fen_widget),true)</visible>
                 </item>
                 <item library="lib/options_menu.py">
