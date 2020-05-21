@@ -24,7 +24,7 @@
             <description>Unofficial add-ons repository</description>
         </extension>
     </addon>
-    <addon id="plugin.video.fen" version="1.6.22a" name="Fen" provider-name="Tiki">
+    <addon id="plugin.video.fen" version="1.6.23" name="Fen" provider-name="Tiki">
         <requires>
             <import addon="script.module.requests" version="2.3.0"/>
             <import addon="script.tiki.artwork" version="1.0.0"/>
