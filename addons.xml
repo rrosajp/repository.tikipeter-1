@@ -24,7 +24,7 @@
             <description>Unofficial add-ons repository</description>
         </extension>
     </addon>
-    <addon id="plugin.video.fen" version="1.7.05" name="Fen" provider-name="Tiki">
+    <addon id="plugin.video.fen" version="1.7.06" name="Fen" provider-name="Tiki">
         <requires>
             <import addon="script.module.requests" version="2.3.0"/>
             <import addon="script.tiki.artwork" version="1.0.0"/>
@@ -39,11 +39,12 @@
         <extension point="xbmc.python.module" library="resources/lib/"/>
         <extension point="xbmc.addon.metadata">
             <summary>
-                Specializes in Furk and Easynews.
+                Specializes in Furk and Easynews. This add-on is intended for advanced Kodi users only.
             </summary>
             <description>
     Specializes in Furk and Easynews(web) account access.
     Also utilizes Openscrapers for those without a Furk or Easynews(web) account.
+    This add-on is intended for advanced Kodi users only.
     Please Note: This add-on is NOT an Exodus fork, and as such will behave differently to an Exodus fork.
             </description>
             <platform>all</platform>
@@ -59,7 +60,7 @@
             </news>
         </extension>
     </addon>
-    <addon id="script.tiki.artwork" version="1.1.9" name="Tiki Artwork" provider-name="Tiki">
+    <addon id="script.tiki.artwork" version="1.1.10" name="Tiki Artwork" provider-name="Tiki">
         <requires>
             <import addon="xbmc.python" version="2.19.0"/>
         </requires>
