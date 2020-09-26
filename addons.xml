@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-    <addon id="repository.tikipeter" name="Tikipeter's Repository" version="0.0.5" provider-name="Tikipeter">
+    <addon id="repository.tikipeter" name="Tikipeter's Repository" version="0.0.6" provider-name="Tikipeter">
         <extension point="xbmc.addon.repository" name="Tikipeter's Repository">
             <dir>
                 <info compressed="false">https://raw.githubusercontent.com/Tikipeter/repository.tikipeter/master/addons.xml</info>
@@ -8,14 +8,14 @@
                 <datadir zip="true">https://raw.githubusercontent.com/Tikipeter/repository.tikipeter/master/zip</datadir>
             </dir>
             <dir>
-                <info compressed="false">https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml</info>
-                <checksum>https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml.md5</checksum>
-                <datadir zip="true">https://raw.githubusercontent.com/Gujal00/smrzips/master/zips/</datadir>
+                <info compressed="false">https://raw.githubusercontent.com/mr-kodi/repository.myaccounts/master/zips/addons.xml</info>
+                <checksum>https://raw.githubusercontent.com/mr-kodi/repository.myaccounts/master/zips/addons.xml.md5</checksum>
+                <datadir zip="true">https://raw.githubusercontent.com/mr-kodi/repository.myaccounts/master/zips/</datadir>
             </dir>
             <dir>
-                <info compressed="false">https://raw.githubusercontent.com/a4k-openproject/repository.openscrapers/master/zips/addons.xml</info>
-                <checksum>https://raw.githubusercontent.com/a4k-openproject/repository.openscrapers/master/zips/addons.xml.md5</checksum>
-                <datadir zip="true">https://raw.githubusercontent.com/a4k-openproject/repository.openscrapers/master/zips/</datadir>
+                <info compressed="false">https://raw.githubusercontent.com/mr-kodi/repository.fenomscrapers/master/zips/addons.xml</info>
+                <checksum>https://raw.githubusercontent.com/mr-kodi/repository.fenomscrapers/master/zips/addons.xml.md5</checksum>
+                <datadir zip="true">https://raw.githubusercontent.com/mr-kodi/repository.fenomscrapers/master/zips/</datadir>
             </dir>
         </extension>
         <extension point="xbmc.addon.metadata">
@@ -24,26 +24,27 @@
             <description>Unofficial add-ons repository</description>
         </extension>
     </addon>
-    <addon id="plugin.video.fen" version="1.8.07c" name="Fen" provider-name="Tiki">
+    <addon id="plugin.video.fen" name="Fen" provider-name="Tiki" version="1.8.10">
         <requires>
-            <import addon="script.module.requests" version="2.3.0"/>
-            <import addon="script.tiki.artwork" version="1.0.0"/>
+            <import addon="script.module.requests" version="2.19.1" />
+            <import addon="script.tiki.artwork" version="1.0.0" />
             <import addon="script.module.tikimeta" version="1.0.0" />
-            <import addon="script.module.resolveurl" version="1.0.0"/>
-            <import addon="script.module.openscrapers"/>
+            <import addon="script.module.myaccounts" version="0.0.0" />
+            <import addon="script.module.fenomscrapers" />
         </requires>
-        <extension point="xbmc.python.pluginsource" library="resources/lib/fen.py">
-            <provides>video</provides>
+        <extension library="resources/lib/fen.py" point="xbmc.python.pluginsource">
+            <provides>video audio image</provides>
         </extension>
-        <extension point="xbmc.service" library="resources/lib/services.py" start="startup"/>
-        <extension point="xbmc.python.module" library="resources/lib/"/>
+        <extension library="resources/lib/services.py" point="xbmc.service" start="startup" />
+        <extension library="resources/lib/" point="xbmc.python.module" />
         <extension point="xbmc.addon.metadata">
+            <reuselanguageinvoker>true</reuselanguageinvoker>
             <summary>
                 Specializes in Furk and Easynews. This add-on is intended for advanced Kodi users only.
             </summary>
             <description>
     Specializes in Furk and Easynews(web) account access.
-    Also utilizes Openscrapers for those without a Furk or Easynews(web) account.
+    Also utilizes Fenomscrapers for those without a Furk or Easynews(web) account.
     This add-on is intended for advanced Kodi users only.
     Please Note: This add-on is NOT an Exodus fork, and as such will behave differently to an Exodus fork.
             </description>
