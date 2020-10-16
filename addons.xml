@@ -24,7 +24,7 @@
             <description>Unofficial add-ons repository</description>
         </extension>
     </addon>
-    <addon id="plugin.video.fen" name="Fen" provider-name="Tiki" version="1.8.14">
+    <addon id="plugin.video.fen" name="Fen" provider-name="Tiki" version="1.8.14a">
         <requires>
             <import addon="script.module.requests" version="2.19.1" />
             <import addon="script.tiki.artwork" version="1.0.0" />
@@ -77,7 +77,7 @@
             </assets>
         </extension>
     </addon>
-    <addon id="script.module.tikimeta" version="1.2.08" name="Tiki Meta Module" provider-name="Tiki">
+    <addon id="script.module.tikimeta" version="1.2.09" name="Tiki Meta Module" provider-name="Tiki">
         <requires>
             <import addon="xbmc.python" version="2.19.0"/>
         </requires>
