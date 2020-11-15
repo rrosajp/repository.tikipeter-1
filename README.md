@@ -1,6 +1,6 @@
 # Rules for Posting Issues...
 
-* **ALL** Issues opened **MUST** include a log capturing the issue.
+* **ALL** Issues opened **MUST** include a log. **THIS INCLUDES EVEN WHEN A LOG ISN'T NEEDED i.e. A REQUEST FOR A NEW FEATURE. NEW ISSUES WITHOUT A LOG ATTACHED WILL BE DELETED, NO EXCEPTIONS.**
 * You **MUST** look at existing Open Issues to see if your problem is being addressed already before opening a new issue.
 * **NO** requests to bring back features/useability that has been changed/removed.
 * **NO** complaining about issues/useability of Fen. There are plenty of other addons out there if it does not fit your needs.
