@@ -98,40 +98,43 @@
             </news>
         </extension>
     </addon>
-    <addon id="context.fencontextmenu" name="Fen Context Menu" version="1.0.12" provider-name="Tikipeter">
+    <addon id="context.fencontextmenu" name="Fen Context Menu" version="1.0.13" provider-name="Tikipeter">
       <requires>
         <import addon="xbmc.python" version="2.25.0"/>
       </requires>
       <extension point="kodi.context.item">
             <menu id="kodi.core.main">
-                <item library="lib/refresh_widgets.py">
-                    <label>32001</label>
-                    <visible>String.IsEqual(ListItem.Property(fen_widget),true)</visible>
-                </item>
-                <item library="lib/mark_watched.py">
-                    <label>32003</label>
-                    <visible>[String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,episode)] + String.IsEqual(ListItem.Property(fen_widget),true) + String.IsEqual(ListItem.Property(fen_playcount),0)</visible>
-                </item>
-                <item library="lib/mark_unwatched.py">
-                    <label>32004</label>
-                    <visible>[String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,episode)] + String.IsEqual(ListItem.Property(fen_widget),true) + String.IsEqual(ListItem.Property(fen_playcount),1)</visible>
-                </item>
-                <item library="lib/browse_into.py">
-                    <label>32002</label>
-                    <visible>String.IsEqual(ListItem.dbtype,episode) + String.IsEqual(ListItem.Property(fen_widget),true)</visible>
-                </item>
-                <item library="lib/add_remove.py">
-                    <label>32005</label>
-                    <visible>[String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,tvshow)] + String.IsEqual(ListItem.Property(fen_widget),true)</visible>
-                </item>
-                <item library="lib/extras.py">
-                    <label>32006</label>
-                    <visible>String.IsEqual(ListItem.Property(fen_widget),true)</visible>
-                </item>
-                <item library="lib/options_menu.py">
-                    <label>32007</label>
-                    <visible>String.IsEqual(ListItem.Property(fen_widget),true)</visible>
-                </item>
+                <menu>
+                    <label>32008</label>
+                    <item library="lib/refresh_widgets.py">
+                        <label>32001</label>
+                        <visible>String.IsEqual(ListItem.Property(fen_widget),true)</visible>
+                    </item>
+                    <item library="lib/mark_watched.py">
+                        <label>32003</label>
+                        <visible>[String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,episode)] + String.IsEqual(ListItem.Property(fen_widget),true) + String.IsEqual(ListItem.Property(fen_playcount),0)</visible>
+                    </item>
+                    <item library="lib/mark_unwatched.py">
+                        <label>32004</label>
+                        <visible>[String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,episode)] + String.IsEqual(ListItem.Property(fen_widget),true) + String.IsEqual(ListItem.Property(fen_playcount),1)</visible>
+                    </item>
+                    <item library="lib/browse_into.py">
+                        <label>32002</label>
+                        <visible>String.IsEqual(ListItem.dbtype,episode) + String.IsEqual(ListItem.Property(fen_widget),true)</visible>
+                    </item>
+                    <item library="lib/add_remove.py">
+                        <label>32005</label>
+                        <visible>[String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,tvshow)] + String.IsEqual(ListItem.Property(fen_widget),true)</visible>
+                    </item>
+                    <item library="lib/extras.py">
+                        <label>32006</label>
+                        <visible>String.IsEqual(ListItem.Property(fen_widget),true)</visible>
+                    </item>
+                    <item library="lib/options_menu.py">
+                        <label>32007</label>
+                        <visible>String.IsEqual(ListItem.Property(fen_widget),true)</visible>
+                    </item>
+                </menu>
             </menu>
         </extension>
       <extension point="xbmc.service"
