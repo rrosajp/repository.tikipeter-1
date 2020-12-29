@@ -24,11 +24,11 @@
             <description>Unofficial add-ons repository</description>
         </extension>
     </addon>
-    <addon id="plugin.video.fen" name="Fen" provider-name="Tiki" version="1.8.23">
+    <addon id="plugin.video.fen" name="Fen" provider-name="Tiki" version="1.8.24">
         <requires>
             <import addon="script.module.requests" version="2.19.1" />
             <import addon="script.tiki.artwork" version="1.0.0" />
-            <import addon="script.tiki.skins" version="1.0.0" />
+            <import addon="script.module.tikiskins" version="1.0.0" />
             <import addon="script.module.tikimeta" version="1.0.0" />
             <import addon="script.module.myaccounts" version="0.0.0" />
             <import addon="script.module.fenomscrapers" />
@@ -62,10 +62,14 @@
             </news>
         </extension>
     </addon>
-    <addon id="script.tiki.skins" version="1.0.0" name="Tiki Skins" provider-name="Tiki">
+    <addon id="script.module.tikiskins" name="Tiki Skins Module" provider-name="Tiki" version="1.0.01">
         <requires>
             <import addon="xbmc.python" version="2.19.0"/>
         </requires>
+        <extension library="lib/default.py" point="xbmc.python.pluginsource">
+            <provides>executable</provides>
+        </extension>
+        <extension library="lib" point="xbmc.python.module" />
         <extension point="xbmc.addon.metadata">
             <summary>Skins for Addons</summary>
             <description>Skins for Addons</description>
