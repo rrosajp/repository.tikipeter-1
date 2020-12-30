@@ -62,7 +62,7 @@
             </news>
         </extension>
     </addon>
-    <addon id="script.module.tikiskins" name="Tiki Skins Module" provider-name="Tiki" version="1.0.01">
+    <addon id="script.module.tikiskins" name="Tiki Skins Module" provider-name="Tiki" version="1.0.02">
         <requires>
             <import addon="xbmc.python" version="2.19.0"/>
         </requires>
