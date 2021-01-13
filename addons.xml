@@ -29,7 +29,6 @@
             <import addon="script.module.requests" version="2.19.1" />
             <import addon="script.tiki.artwork" version="1.0.0" />
             <import addon="script.module.tikiskins" version="1.0.0" />
-            <import addon="script.module.tikimeta" version="1.0.0" />
             <import addon="script.module.myaccounts" version="0.0.0" />
             <import addon="script.module.fenomscrapers" />
         </requires>
