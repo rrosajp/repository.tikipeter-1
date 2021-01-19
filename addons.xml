@@ -24,27 +24,28 @@
             <description>Unofficial add-ons repository</description>
         </extension>
     </addon>
-    <addon id="plugin.video.fen" name="Fen" provider-name="Tiki" version="1.8.25c">
+    <addon id="plugin.video.fen" name="Fen" provider-name="Tiki" version="1.8.30">
         <requires>
             <import addon="script.module.requests" version="2.19.1" />
-            <import addon="script.tiki.artwork" version="1.0.0" />
-            <import addon="script.module.tikiskins" version="1.0.0" />
+            <import addon="script.tikiskins" version="1.0.0" />
+            <import addon="script.tikiart" version="1.0.0" />
             <import addon="script.module.myaccounts" version="0.0.0" />
-            <import addon="script.module.fenomscrapers" />
+            <import addon="script.module.fenomscrapers" version="0.0.0" />
         </requires>
         <extension library="resources/lib/fen.py" point="xbmc.python.pluginsource">
-            <provides>video audio image</provides>
+            <provides>video</provides>
         </extension>
-        <extension library="resources/lib/services.py" point="xbmc.service" start="startup" />
+        <extension library="resources/lib/service.py" point="xbmc.service" start="startup" />
         <extension library="resources/lib/" point="xbmc.python.module" />
         <extension point="xbmc.addon.metadata">
             <reuselanguageinvoker>true</reuselanguageinvoker>
             <summary>
-                Specializes in Furk and Easynews. This add-on is intended for advanced Kodi users only.
+                Specializes in Furk and Easynews. This add-on is intended for advanced Kodi users only. You must have a debrid service to use this add-on without Furk/Easynews.
             </summary>
             <description>
     Specializes in Furk and Easynews(web) account access.
     Also utilizes Fenomscrapers for those without a Furk or Easynews(web) account.
+    You must have a debrid service to use this add-on without Furk/Easynews.
     This add-on is intended for advanced Kodi users only.
     Please Note: This add-on is NOT an Exodus fork, and as such will behave differently to an Exodus fork.
             </description>
@@ -61,7 +62,7 @@
             </news>
         </extension>
     </addon>
-    <addon id="script.module.tikiskins" name="Tiki Skins Module" provider-name="Tiki" version="1.0.03b">
+    <addon id="script.tikiskins" name="Tiki Skins Module" provider-name="Tiki" version="1.1.01">
         <extension point="xbmc.python.module" />
         <extension point="xbmc.addon.metadata">
             <summary>Skins for Addons</summary>
@@ -74,7 +75,7 @@
             </assets>
         </extension>
     </addon>
-    <addon id="script.tiki.artwork" name="Tiki Artwork" provider-name="Tiki" version="1.1.13a">
+    <addon id="script.tikiart" name="Tiki Art Module" provider-name="Tiki" version="1.1.50">
         <extension point="xbmc.python.module" />
         <extension point="xbmc.addon.metadata">
             <summary>Themes for Addons</summary>
