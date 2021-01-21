@@ -142,7 +142,8 @@
         </requires>
         <extension point="xbmc.python.pluginsource" library="default.py">
             <provides>executable</provides>
-        </extension>    
+        </extension>
+        <extension point="xbmc.python.module" />
         <extension point="xbmc.addon.metadata">
             <summary lang="en">Clean Kodi's Thumbnail Cache</summary>
             <description lang="en">Clean Kodi's Thumbnail Cache</description>
