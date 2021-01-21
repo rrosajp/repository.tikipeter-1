@@ -136,7 +136,7 @@
         <source></source>
       </extension>
     </addon>
-    <addon id="plugin.program.thumbcache.cleaner" name="Thumbnail Cache Cleaner" version="1.0.01" provider-name="Tiki">
+    <addon id="plugin.program.thumbcache.cleaner" name="Thumbnail Cache Cleaner" version="1.0.02" provider-name="Tiki">
         <requires>
             <import addon="xbmc.python" version="2.1.0" />
         </requires>
