@@ -136,4 +136,23 @@
         <source></source>
       </extension>
     </addon>
+    <addon id="plugin.program.thumbcache.cleaner" name="Thumbnail Cache Cleaner" version="1.0.01" provider-name="Tiki">
+        <requires>
+            <import addon="xbmc.python" version="2.1.0" />
+        </requires>
+        <extension point="xbmc.python.pluginsource" library="default.py">
+            <provides>executable</provides>
+        </extension>    
+        <extension point="xbmc.addon.metadata">
+            <summary lang="en">Clean Kodi's Thumbnail Cache</summary>
+            <description lang="en">Clean Kodi's Thumbnail Cache</description>
+            <platform>all</platform>
+            <reuselanguageinvoker>false</reuselanguageinvoker>
+            <source>/</source>
+            <news></news>
+            <assets>
+                <icon>icon.png</icon>
+            </assets>
+        </extension>
+    </addon>
 </addons>
