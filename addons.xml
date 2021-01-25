@@ -88,7 +88,7 @@
             </assets>
         </extension>
     </addon>
-    <addon id="context.fencontextmenu" name="Fen Context Menu" version="1.0.14" provider-name="Tikipeter">
+    <addon id="context.fencontextmenu" name="Fen Context Menu" version="1.0.15" provider-name="Tikipeter">
         <extension point="kodi.context.item">
             <menu id="kodi.core.main">
                 <menu>
@@ -109,8 +109,12 @@
                         <label>32002</label>
                         <visible>String.IsEqual(ListItem.dbtype,episode) + String.IsEqual(ListItem.Property(fen_widget),true)</visible>
                     </item>
-                    <item library="lib/add_remove.py">
+                    <item library="lib/trakt_lists_manager.py">
                         <label>32005</label>
+                        <visible>[String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,tvshow)] + String.IsEqual(ListItem.Property(fen_widget),true)</visible>
+                    </item>
+                    <item library="lib/favorites_manager.py">
+                        <label>32009</label>
                         <visible>[String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,tvshow)] + String.IsEqual(ListItem.Property(fen_widget),true)</visible>
                     </item>
                     <item library="lib/extras.py">
@@ -129,8 +133,8 @@
       </extension>
       <extension point="kodi.addon.metadata">
         <platform>all</platform>
-        <summary lang="en">Access Fen Options, Settings and Features from Kodi</summary>
-        <description lang="en">Access Fen Options, Settings and Features from Kodi</description>
+        <summary lang="en">Access Fen Options, Settings and Features from Kodi Widgets</summary>
+        <description lang="en">Access Fen Options, Settings and Features from Kodi Widgets</description>
         <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
         <forum></forum>
         <source></source>
