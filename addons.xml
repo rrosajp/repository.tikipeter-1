@@ -24,7 +24,7 @@
             <description>Unofficial add-ons repository</description>
         </extension>
     </addon>
-    <addon id="plugin.video.fen" name="Fen" provider-name="Tiki" version="1.8.35e">
+    <addon id="plugin.video.fen" name="Fen" provider-name="Tiki" version="1.8.36">
         <requires>
             <import addon="script.module.requests" version="2.19.1" />
             <import addon="script.tikiskins" version="1.0.0" />
@@ -88,7 +88,7 @@
             </assets>
         </extension>
     </addon>
-    <addon id="context.fencontextmenu" name="Fen Context Menu" version="1.0.16" provider-name="Tikipeter">
+    <addon id="context.fencontextmenu" name="Fen Context Menu" version="1.0.17" provider-name="Tikipeter">
         <extension point="kodi.context.item">
             <menu id="kodi.core.main">
                 <item library="lib/refresh_widgets.py">
