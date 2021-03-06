@@ -24,7 +24,7 @@
             <description>Unofficial add-ons repository</description>
         </extension>
     </addon>
-    <addon id="plugin.video.fen" name="Fen" provider-name="Tiki" version="1.8.36c">
+    <addon id="plugin.video.fen" name="Fen" provider-name="Tiki" version="1.8.37">
         <requires>
             <import addon="script.module.requests" version="2.19.1" />
             <import addon="script.tikiskins" version="1.0.0" />
@@ -62,7 +62,7 @@
             </news>
         </extension>
     </addon>
-    <addon id="script.tikiskins" name="Tiki Skins Module" provider-name="Tiki" version="1.1.04b">
+    <addon id="script.tikiskins" name="Tiki Skins Module" provider-name="Tiki" version="1.1.05">
         <extension point="xbmc.python.module" />
         <extension point="xbmc.addon.metadata">
             <summary>Skins for Addons</summary>
@@ -75,7 +75,7 @@
             </assets>
         </extension>
     </addon>
-    <addon id="script.tikiart" name="Tiki Art Module" provider-name="Tiki" version="1.1.50">
+    <addon id="script.tikiart" name="Tiki Art Module" provider-name="Tiki" version="1.1.51">
         <extension point="xbmc.python.module" />
         <extension point="xbmc.addon.metadata">
             <summary>Themes for Addons</summary>
@@ -88,7 +88,7 @@
             </assets>
         </extension>
     </addon>
-    <addon id="context.fencontextmenu" name="Fen Context Menu" version="1.0.17" provider-name="Tikipeter">
+    <addon id="context.fencontextmenu" name="Fen Context Menu" version="1.0.18" provider-name="Tikipeter">
         <extension point="kodi.context.item">
             <menu id="kodi.core.main">
                 <item library="lib/refresh_widgets.py">
