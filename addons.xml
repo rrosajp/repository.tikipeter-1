@@ -88,7 +88,7 @@
             </assets>
         </extension>
     </addon>
-    <addon id="context.fencontextmenu" name="Fen Context Menu" version="1.0.18" provider-name="Tikipeter">
+    <addon id="context.fencontextmenu" name="Fen Context Menu" version="1.0.19" provider-name="Tikipeter">
         <extension point="kodi.context.item">
             <menu id="kodi.core.main">
                 <item library="lib/refresh_widgets.py">
