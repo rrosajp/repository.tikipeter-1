@@ -24,7 +24,7 @@
             <description>Unofficial add-ons repository</description>
         </extension>
     </addon>
-    <addon id="plugin.video.fen" name="Fen" provider-name="Tiki" version="1.8.51">
+    <addon id="plugin.video.fen" name="Fen" provider-name="Tiki" version="1.8.51h">
         <requires>
             <import addon="script.module.requests" version="2.19.1" />
             <import addon="script.tikiskins" version="1.0.0" />
@@ -39,27 +39,16 @@
         <extension library="resources/lib/" point="xbmc.python.module" />
         <extension point="xbmc.addon.metadata">
             <reuselanguageinvoker>true</reuselanguageinvoker>
-            <summary>
-                Specializes in Furk and Easynews. This add-on is intended for advanced Kodi users only. You must have a debrid service to use this add-on without Furk/Easynews.
-            </summary>
-            <description>
-    Specializes in Furk and Easynews(web) account access.
-    Also utilizes Fenomscrapers for those without a Furk or Easynews(web) account.
-    You must have a debrid service to use this add-on without Furk/Easynews.
-    This add-on is intended for advanced Kodi users only.
-    Please Note: This add-on is NOT an Exodus fork, and as such will behave differently to an Exodus fork.
-            </description>
+            <summary lang="en">Mainly used for Furk and Easynews.</summary>
+            <description lang="en">This add-on is intended for advanced Kodi users only. Mainly used for Furk and Easynews(web) account access. Also utilizes Fenomscrapers for those without a Furk or Easynews(web) account. You must have a debrid service to use this add-on without Furk/Easynews.[CR][CR][B]Please Note: This add-on is NOT an Exodus fork, and as such will behave differently to an Exodus fork.[/B]</description>
             <platform>all</platform>
-            <disclaimer>
-            </disclaimer>
+            <disclaimer lang="en">The author of this addon do not host any of the content which is found and have no affiliation with any of the content providers. This addon simply searches websites for content. Use at your own risk!</disclaimer>
             <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
             <assets>
                 <icon>icon.png</icon>
                 <fanart>fanart.png</fanart>
             </assets>
-            <news>
-    INFO: For latest changes see Changelog within Tools of add-on.
-            </news>
+            <news>INFO: For latest changes see Changelog within Tools of add-on.</news>
         </extension>
     </addon>
     <addon id="script.tikiskins" name="Tiki Skins Module" provider-name="Tiki" version="1.1.08">
