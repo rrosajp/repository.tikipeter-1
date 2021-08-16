@@ -4,7 +4,7 @@ EDIT: I do NOT want this posted on addons4kodi. Would the user who decided to po
 INFO:
 Fen's next update will have many feature and setting removals. It might be wise to make sure you know how to roll back an update if you aren't happy with the changes.
 
-This next feautre purge is more a "settings" purge really. Some features are being removed, but the main focus for me was streamlining the settings as much as possible whilst still keeping Fen open to many user-defined preferences. Well over 40 settings have been removed.
+This next feature purge is more a "settings" purge really. Some features are being removed, but the main focus for me was streamlining the settings as much as possible whilst still keeping Fen open to many user-defined preferences. Well over 40 settings have been removed.
 
 An non-exclusive list of features being removed...
 * Pre-emptive Termination of scrapers.
