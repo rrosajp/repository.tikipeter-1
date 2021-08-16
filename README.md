@@ -1,3 +1,5 @@
+EDIT: I do NOT want this posted on addons4kodi. Would the user who decided to post this on my behalf kindly delete it from reddit. Every damn time this happens.
+
 
 INFO:
 Fen's next update will have many feature and setting removals. It might be wise to make sure you know how to roll back an update if you aren't happy with the changes.
