@@ -4,7 +4,7 @@ Fen's next update will have many feature and setting removals. It might be wise 
 
 This next feature purge is more a "settings" purge really. Some features are being removed, but the main focus for me was streamlining the settings as much as possible whilst still keeping Fen open to many user-defined preferences. Well over 40 settings have been removed.
 
-A non-exclusive list of features being removed...
+A non-exhaustive list of features being removed...
 * Pre-emptive Termination of scrapers.
 * Backup/Restore of settings.
 * Auto Removal of failing scrapers. Includes removal of keeping stats on scraper success/failure.
