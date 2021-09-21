@@ -24,7 +24,7 @@
             <description>Unofficial add-ons repository</description>
         </extension>
     </addon>
-    <addon id="plugin.video.fen" name="Fen" provider-name="Tiki" version="2.0.39">
+    <addon id="plugin.video.fen" name="Fen" provider-name="Tiki" version="2.0.40">
         <requires>
             <import addon="script.module.requests" version="2.19.1" />
             <import addon="script.tikiskins" version="1.0.0" />
@@ -51,7 +51,7 @@
             <news>INFO: For latest changes see Changelog within Tools of add-on.</news>
         </extension>
     </addon>
-    <addon id="script.tikiskins" name="Tiki Skins Module" provider-name="Tiki" version="1.1.34">
+    <addon id="script.tikiskins" name="Tiki Skins Module" provider-name="Tiki" version="1.1.35">
         <extension point="xbmc.python.module" />
         <extension point="xbmc.addon.metadata">
             <summary>Skins for Addons</summary>
