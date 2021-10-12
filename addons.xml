@@ -24,7 +24,7 @@
             <description>Unofficial add-ons repository</description>
         </extension>
     </addon>
-    <addon id="plugin.video.fen" name="Fen" provider-name="Tiki" version="2.0.42">
+    <addon id="plugin.video.fen" name="Fen" provider-name="Tiki" version="2.0.43">
         <requires>
             <import addon="script.module.requests" version="2.19.1" />
             <import addon="script.module.pil" version="1.1.7" />
@@ -37,6 +37,50 @@
         </extension>
         <extension library="resources/lib/service.py" point="xbmc.service" start="startup" />
         <extension library="resources/lib/" point="xbmc.python.module" />
+        <extension point="kodi.context.item">
+            <menu id="kodi.core.main">
+                <item library="resources/contextmenu/refresh_widgets.py">
+                    <label>40001</label>
+                    <visible>String.IsEqual(ListItem.Property(fen_widget),true)</visible>
+                </item>
+                <item library="resources/contextmenu/mark_watched.py">
+                    <label>40003</label>
+                    <visible>[String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,episode)] + String.IsEqual(ListItem.Property(fen_widget),true) + String.IsEqual(ListItem.Property(fen_playcount),0)</visible>
+                </item>
+                <item library="resources/contextmenu/mark_unwatched.py">
+                    <label>40004</label>
+                    <visible>[String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,episode)] + String.IsEqual(ListItem.Property(fen_widget),true) + String.IsEqual(ListItem.Property(fen_playcount),1)</visible>
+                </item>
+                <item library="resources/contextmenu/clear_progress.py">
+                    <label>40009</label>
+                    <visible>[String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,episode)] + String.IsEqual(ListItem.Property(fen_widget),true) + String.IsEqual(ListItem.Property(fen_in_progress),true)</visible>
+                </item>
+                <item library="resources/contextmenu/browse.py">
+                    <label>40002</label>
+                    <visible>String.IsEqual(ListItem.dbtype,episode) + String.IsEqual(ListItem.Property(fen_widget),true)</visible>
+                </item>
+                <item library="resources/contextmenu/trakt_manager.py">
+                    <label>40005</label>
+                    <visible>[String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,tvshow)] + String.IsEqual(ListItem.Property(fen_widget),true)</visible>
+                </item>
+                <item library="resources/contextmenu/favorites_manager.py">
+                    <label>40008</label>
+                    <visible>[String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,tvshow)] + String.IsEqual(ListItem.Property(fen_widget),true)</visible>
+                </item>
+                <item library="resources/contextmenu/play_random.py">
+                    <label>40010</label>
+                    <visible>[String.IsEqual(ListItem.dbtype,tvshow)] + String.IsEqual(ListItem.Property(fen_widget),true)</visible>
+                </item>
+                <item library="resources/contextmenu/options.py">
+                    <label>40007</label>
+                    <visible>String.IsEqual(ListItem.Property(fen_widget),true)</visible>
+                </item>
+                <item library="resources/contextmenu/extras.py">
+                    <label>40006</label>
+                    <visible>String.IsEqual(ListItem.Property(fen_widget),true)</visible>
+                </item>
+            </menu>
+        </extension>
         <extension point="xbmc.addon.metadata">
             <reuselanguageinvoker>true</reuselanguageinvoker>
             <summary lang="en">Mainly used for Furk and Easynews.</summary>
@@ -51,19 +95,6 @@
             <news>INFO: For latest changes see Changelog within Tools of add-on.</news>
         </extension>
     </addon>
-    <addon id="script.tikiskins" name="Tiki Skins Module" provider-name="Tiki" version="1.1.35">
-        <extension point="xbmc.python.module" />
-        <extension point="xbmc.addon.metadata">
-            <summary>Skins for Addons</summary>
-            <description>Skins for Addons</description>
-            <platform>all</platform>
-            <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
-            <assets>
-                <icon>icon.png</icon>
-                <fanart>fanart.png</fanart>
-            </assets>
-        </extension>
-    </addon>
     <addon id="script.tikiart" name="Tiki Art Module" provider-name="Tiki" version="1.1.54">
         <extension point="xbmc.python.module" />
         <extension point="xbmc.addon.metadata">
@@ -76,55 +107,6 @@
                 <fanart>fanart.png</fanart>
             </assets>
         </extension>
-    </addon>
-    <addon id="context.fencontextmenu" name="Fen Context Menu" version="1.0.27" provider-name="Tikipeter">
-        <extension point="kodi.context.item">
-            <menu id="kodi.core.main">
-                <item library="lib/refresh_widgets.py">
-                    <label>32001</label>
-                    <visible>String.IsEqual(ListItem.Property(fen_widget),true)</visible>
-                </item>
-                <item library="lib/mark_watched.py">
-                    <label>32003</label>
-                    <visible>[String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,episode)] + String.IsEqual(ListItem.Property(fen_widget),true) + String.IsEqual(ListItem.Property(fen_playcount),0)</visible>
-                </item>
-                <item library="lib/mark_unwatched.py">
-                    <label>32004</label>
-                    <visible>[String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,episode)] + String.IsEqual(ListItem.Property(fen_widget),true) + String.IsEqual(ListItem.Property(fen_playcount),1)</visible>
-                </item>
-                <item library="lib/browse_into.py">
-                    <label>32002</label>
-                    <visible>String.IsEqual(ListItem.dbtype,episode) + String.IsEqual(ListItem.Property(fen_widget),true)</visible>
-                </item>
-                <item library="lib/trakt_lists_manager.py">
-                    <label>32005</label>
-                    <visible>[String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,tvshow)] + String.IsEqual(ListItem.Property(fen_widget),true)</visible>
-                </item>
-                <item library="lib/favorites_manager.py">
-                    <label>32008</label>
-                    <visible>[String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,tvshow)] + String.IsEqual(ListItem.Property(fen_widget),true)</visible>
-                </item>
-                <item library="lib/extras.py">
-                    <label>32006</label>
-                    <visible>String.IsEqual(ListItem.Property(fen_widget),true)</visible>
-                </item>
-                <item library="lib/options_menu.py">
-                    <label>32007</label>
-                    <visible>String.IsEqual(ListItem.Property(fen_widget),true)</visible>
-                </item>
-            </menu>
-        </extension>
-      <extension point="xbmc.service"
-                  library="service.py" start="startup">
-      </extension>
-      <extension point="kodi.addon.metadata">
-        <platform>all</platform>
-        <summary lang="en">Access Fen Options, Settings and Features from Kodi Widgets</summary>
-        <description lang="en">Access Fen Options, Settings and Features from Kodi Widgets</description>
-        <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
-        <forum></forum>
-        <source></source>
-      </extension>
     </addon>
     <addon id="plugin.program.thumbcache.cleaner" name="Thumbnail Cache Cleaner" version="1.0.03" provider-name="Tiki">
         <requires />
