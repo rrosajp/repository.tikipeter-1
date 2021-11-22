@@ -1,8 +1,10 @@
 # Rules for Posting Issues...
 
 * **ANY** instance of Fen installed through a build/wizard will NOT be supported here.
+* **ANY** instance of Fen running on Kodi 18 or lower will NOT be supported here.
 * Issues related to playback through **TMDbHelper** will NOT be supported here.
 * **ALL** error related Issues opened **MUST** include a log. **ERROR ISSUES WITHOUT A LOG ATTACHED WILL BE DELETED, NO EXCEPTIONS.**
+* You **MUST** make sure you are using the latest versions of Fen and it's dependencies before opening an Issue.
 * You **MUST** look at existing Open Issues to see if your problem is being addressed already before opening a new issue.
 * **NO** requests to bring back features/useability that have been changed/removed.
 * **NO** complaining about issues/useability of Fen. There are plenty of other addons out there if it does not fit your needs.
